@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.2 on win32)" generated="20230824 10:04:37.092" rpa="false">
+<suite id="s1" name="TC2 LU" source="C:\Users\m.jlassi\Desktop\workspace3\Suite_De_Test\Login_User_with_correct_email_and_password\TC2_LU.robot">
+<test id="s1-t1" name="test cas2:Login_User_with_correct_email_and_password">
+<kw name="Navigate to url" library="function_Globale">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20230824 10:04:39.097" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230824 10:04:39.097" endtime="20230824 10:04:41.764"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:39.097" endtime="20230824 10:04:41.767"></status>
+</kw>
+<kw name="Accédez à l'URL 'http://automationexercise.com'" library="function_Globale">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20230824 10:04:41.772" level="INFO">Opening url 'http://automationexercise.com'</msg>
+<status status="PASS" starttime="20230824 10:04:41.770" endtime="20230824 10:04:45.279"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:41.767" endtime="20230824 10:04:45.280"></status>
+</kw>
+<kw name="afficher message" library="Function_LU">
+<kw name="Display Message" library="function_Globale">
+<arguments>
+<arg>${messgae_TC2}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20230824 10:04:45.285" level="INFO">hello testcaseeetttyyy</msg>
+<status status="PASS" starttime="20230824 10:04:45.284" endtime="20230824 10:04:45.285"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:45.283" endtime="20230824 10:04:45.286"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:45.281" endtime="20230824 10:04:45.287"></status>
+</kw>
+<kw name="Verify that home page is visible successfully" library="function_Globale">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${bouton_login_seconnecter}</arg>
+</arguments>
+<status status="PASS" starttime="20230824 10:04:45.288" endtime="20230824 10:04:45.331"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:45.288" endtime="20230824 10:04:45.331"></status>
+</kw>
+<kw name="Click on 'Signup / Login' button" library="function_Globale">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${bouton_login_seconnecter}</arg>
+</arguments>
+<msg timestamp="20230824 10:04:45.332" level="INFO">Clicking link '//a[@href="/login"]'.</msg>
+<status status="PASS" starttime="20230824 10:04:45.332" endtime="20230824 10:04:46.351"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:45.332" endtime="20230824 10:04:46.351"></status>
+</kw>
+<kw name="Verify 'Login to your account' is visible" library="Function_LU">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//div[@class="login-form"]</arg>
+</arguments>
+<status status="PASS" starttime="20230824 10:04:46.352" endtime="20230824 10:04:46.411"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:46.352" endtime="20230824 10:04:46.411"></status>
+</kw>
+<kw name="enter mail" library="Function_LU">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mail}</arg>
+<arg>${mail_login}</arg>
+</arguments>
+<msg timestamp="20230824 10:04:46.413" level="INFO">Typing text 'lmpppoihejdhvljmpo@gmail.com' into text field '//input[@type="email"]'.</msg>
+<status status="PASS" starttime="20230824 10:04:46.412" endtime="20230824 10:04:46.867"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:46.412" endtime="20230824 10:04:46.867"></status>
+</kw>
+<kw name="enter passssword" library="Function_LU">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passssword}</arg>
+<arg>${mot_de_passe_login}</arg>
+</arguments>
+<msg timestamp="20230824 10:04:46.869" level="INFO">Typing text 'mounaa' into text field '//input[@type="password"]'.</msg>
+<status status="PASS" starttime="20230824 10:04:46.869" endtime="20230824 10:04:47.009"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:46.868" endtime="20230824 10:04:47.009"></status>
+</kw>
+<kw name="click login button" library="Function_LU">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${login_button}</arg>
+</arguments>
+<msg timestamp="20230824 10:04:47.011" level="INFO">Clicking button '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20230824 10:04:47.010" endtime="20230824 10:04:49.286"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:47.010" endtime="20230824 10:04:49.286"></status>
+</kw>
+<kw name="Verify that 'Logged in as username' is visible" library="Function_LU">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${loggin_as_mouna}</arg>
+</arguments>
+<status status="PASS" starttime="20230824 10:04:49.286" endtime="20230824 10:04:49.334"></status>
+</kw>
+<status status="PASS" starttime="20230824 10:04:49.286" endtime="20230824 10:04:49.335"></status>
+</kw>
+<kw name="Click 'Delete Account' button" library="function_Globale">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href="/delete_account"]</arg>
+</arguments>
+<msg timestamp="20230824 10:04:49.338" level="INFO">Clicking link '//a[@href="/delete_account"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20230824 10:04:49.691" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230824 10:04:49.350" endtime="20230824 10:04:49.691"></status>
+</kw>
+<msg timestamp="20230824 10:04:49.725" level="FAIL">Link with locator '//a[@href="/delete_account"]' not found.</msg>
+<status status="FAIL" starttime="20230824 10:04:49.337" endtime="20230824 10:04:49.725"></status>
+</kw>
+<status status="FAIL" starttime="20230824 10:04:49.336" endtime="20230824 10:04:49.725"></status>
+</kw>
+<status status="FAIL" starttime="20230824 10:04:39.097" endtime="20230824 10:04:49.726" critical="yes">Link with locator '//a[@href="/delete_account"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20230824 10:04:37.114" endtime="20230824 10:04:49.729"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TC2 LU">TC2 LU</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
